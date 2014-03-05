@@ -1,0 +1,35 @@
+
+using System;
+
+class Practicaiva
+	{
+		public static void Main(string[] args)
+		{
+			Console.WriteLine("Ingresa el primer precio de producto:");
+			double producto1=double.Parse(Console.ReadLine());
+			Console.WriteLine("Ingresa el segundo precio precio de producto:");
+			double producto2=double.Parse(Console.ReadLine());
+			Console.WriteLine("Ingresa el tercer precio precio de producto:");
+			double producto3=double.Parse(Console.ReadLine());
+			
+		 	double IVA=.16,total1,total2,total3;
+        
+	        total1=producto1*IVA+producto1;
+	        total2=producto2*IVA+producto2;  
+	        total3=producto3*IVA+producto3;
+	        double PrecioTotal;
+	        
+	       PrecioTotal=total1+total2+total3;
+	        
+	        Console.WriteLine("Producto 1 + iva =" + total1);
+	        Console.WriteLine("Producto 2 + iva =" + total2);
+	        Console.WriteLine("Producto 3 + iva =" + total3);
+	        Console.WriteLine("Total=" + PrecioTotal);
+			Console.WriteLine("El precio de el producto es :");
+			
+			// TODO: Implement Functionality Here
+			
+			Console.Write("Press any key to continue . . . ");
+			Console.ReadKey(true);
+		}
+	}
